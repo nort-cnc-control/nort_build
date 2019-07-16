@@ -1,0 +1,21 @@
+[submodule "crc32"]
+	path = crc32
+	url = https://github.com/nort-cnc-control/crc32
+[submodule "rdp"]
+	path = rdp
+	url = https://github.com/nort-cnc-control/rdp
+[submodule "pyrdpos"]
+	path = pyrdpos
+	url = https://github.com/nort-cnc-control/pyrdpos
+[submodule "cnccontrol_rt"]
+	path = cnccontrol_rt
+	url = https://github.com/nort-cnc-control/cnccontrol_rt
+[submodule "rdpos_terminal"]
+	path = rdpos_terminal
+	url = https://github.com/nort-cnc-control/rdpos_terminal
+[submodule "serial-datagram"]
+	path = serial-datagram
+	url = https://github.com/nort-cnc-control/serial-datagram
+[submodule "nortcnccontrol"]
+	path = nortcnccontrol
+	url = https://github.com/nort-cnc-control/nortcnccontrol

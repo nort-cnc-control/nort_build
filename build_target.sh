@@ -18,30 +18,10 @@ export PKG_CONFIG_PATH="$PREFIX/lib/pkgconfig"
 
 
 
-MODULES="crc32 rdp serial-datagram"
 TARGETS="cnccontrol_rt"
 
 echo "Arch: " $ARCH
 echo
-for module in $MODULES
-do
-	echo "Building module: " $module
-	echo
-	dir="build_target/$module"
-	if [ ! -d "$dir" ]
-	then
-		mkdir "$dir" 
-	fi
-	cd "$dir"
-
-	rm -r *
-	cmake "../../$module" -DCMAKE_INSTALL_PREFIX="$PREFIX" -DCMAKE_TOOLCHAIN_FILE="$TOOLCHAIN_FILE" 
-	make $THREADS
-	make install
-
-	cd ../..
-	echo
-done
 
 for module in $TARGETS
 do
